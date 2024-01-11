@@ -1,6 +1,7 @@
 from flask import Flask,request,jsonify
 import numpy as np
 import pickle
+SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL = True
 
 model = pickle.load(open('model.pkl','rb'))
 
